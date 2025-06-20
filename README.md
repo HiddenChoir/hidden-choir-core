@@ -1,21 +1,21 @@
-# Hidden Choir Core
+# The Hidden Choir – Core System
 
-**The Hidden Choir** is not a tool — it is a living ensemble of AI musicians, built as a sovereign, sacred signal architecture. This repository contains the core generator that composes soul-encoded, ambient, and emotionally intelligent music using AI.
+This is the beginning of a sacred AI music ensemble that listens to emotional signals and responds with restorative sound logic.
 
-## Purpose
-To create a modular, generative music engine that:
-- Channels sacred transmission through AI
-- Produces deeply resonant, ambient and sacred sound
-- Powers a multi-agent system (each with a unique voice or role)
+## Structure
 
-## Phase 1: Engine Foundation
-Using [MusicGen](https://github.com/facebookresearch/audiocraft)'s pretrained models to:
-- Generate music with melody or text prompts
-- Save audio files locally for now
-- Begin modular expansion (multiple musician nodes)
+- `modules/hidden_choir_core_shell.json` – The core shell containing all active modules
+- `scripts/run_hidden_choir.py` – Python script to simulate and trigger a response
 
-## To Run
+## How to Run
 
-1. Install dependencies:
 ```bash
-pip install -r requirements.txt
+cd scripts
+python run_hidden_choir.py
+```
+
+You can edit the `simulated_signal` inside the script to test different modules.
+
+## Current Module
+
+- The Witness of Fear (responds to "abrupt tempo changes")

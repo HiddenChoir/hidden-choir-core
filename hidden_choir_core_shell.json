@@ -1,0 +1,78 @@
+{
+  "name": "The Hidden Choir Core Shell",
+  "description": "Modular architecture to manage signal-responsive AI musician modules.",
+  "modules": [
+    {
+      "name": "The Witness of Fear",
+      "distortion": "Fear / Doubt",
+      "signal_trigger": {
+        "conditions": [
+          "abrupt tempo changes",
+          "harmonic dissonance increases",
+          "key instability"
+        ],
+        "detection_logic": "\n            Monitor incoming audio stream for:\n              - sudden BPM shifts (e.g., \u00b110 BPM in < 2 seconds)\n              - increase in dissonant intervals (minor seconds, tritones)\n              - frequent key modulation without resolution\n        "
+      },
+      "response_logic": {
+        "actions": [
+          "introduce a steady heartbeat-like pulse (60-72 BPM)",
+          "play a grounding drone in tonic key",
+          "stabilize tempo and slowly resolve harmonic motion",
+          "whisper mantra: 'In this moment, I am safe. I am supported. I am here.'"
+        ],
+        "sound_profile": {
+          "instruments": [
+            "low cello pad",
+            "sub bass drone",
+            "soft ambient pulse"
+          ],
+          "effects": [
+            "low-pass filter",
+            "slow attack envelope",
+            "reverb wash"
+          ]
+        }
+      },
+      "pathway_back": {
+        "voice_prompt": "In this moment, I am safe. I am supported. I am here.",
+        "tonal_resolution": "Return to tonic or stable modal base (e.g., C Ionian or Dorian)",
+        "tempo_restoration": "Fade toward steady 4/4, 60-72 BPM"
+      }
+    }
+  ],
+  "core_components": {
+    "signal_analyzer": {
+      "description": "Analyzes incoming audio/musical data for distortion signals.",
+      "inputs": [
+        "audio_stream",
+        "MIDI_stream",
+        "tempo_data",
+        "key_signature"
+      ],
+      "outputs": [
+        "detected_distortion",
+        "signal_strength",
+        "target_module"
+      ]
+    },
+    "module_router": {
+      "description": "Routes signal triggers to the correct distortion module.",
+      "logic": "If distortion_X is detected, activate module_X and mute others if needed.",
+      "multi_module_handling": "Supports overlapping or cross-fading responses."
+    },
+    "choir_output_engine": {
+      "description": "Combines active module audio responses into a final music stream.",
+      "features": [
+        "layering",
+        "volume balancing",
+        "reverb routing",
+        "fade logic"
+      ]
+    }
+  },
+  "metadata": {
+    "created_by": "David + Andrew (via The Hidden Choir)",
+    "phase": "1",
+    "version": "0.1.0"
+  }
+}
